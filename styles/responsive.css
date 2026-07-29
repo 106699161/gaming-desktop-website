@@ -1,0 +1,227 @@
+/* ===========================
+   RESPONSIVE.CSS
+   =========================== */
+
+/* Tablet */
+@media screen and (max-width: 992px){
+
+    .logo{
+        position:static;
+        transform:none;
+        margin-bottom:20px;
+        text-align:center;
+    }
+
+    .logo img{
+        width:100px;
+    }
+
+    header{
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        font-size:20px;
+    }
+
+    .banner h1{
+        font-size:40px;
+    }
+
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-image img{
+        width:100%;
+        max-width:400px;
+    }
+
+    .mission,
+    .team-container,
+    .why-container,
+    .product-container,
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ===========================
+   Mobile
+   =========================== */
+
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    header{
+        padding:15px;
+        text-align:center;
+    }
+
+    .logo{
+        position:static;
+        transform:none;
+        margin-bottom:15px;
+    }
+
+    .logo img{
+        width:90px;
+    }
+
+    nav ul{
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav ul li{
+        margin:0;
+    }
+
+    nav ul li:nth-child(even){
+        display:none;
+    }
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero-content{
+        width:90%;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .hero-content p{
+        font-size:17px;
+    }
+
+    .btn{
+        padding:12px 25px;
+        font-size:16px;
+    }
+
+    .banner h1{
+        font-size:32px;
+    }
+
+    .banner p{
+        font-size:16px;
+    }
+
+    .products,
+    .product-container,
+    .team-container,
+    .why-container{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .product-card,
+    .card,
+    .member,
+    .why-card,
+    .box{
+        width:100%;
+    }
+
+    .product-card img,
+    .card img{
+        height:180px;
+    }
+
+    .container{
+        width:95%;
+        padding:20px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+
+    .radio-group,
+    .check-group{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .about{
+        padding:40px 20px;
+        text-align:center;
+    }
+
+    .about-content h2{
+        font-size:28px;
+    }
+
+    .about-content p{
+        line-height:28px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    footer{
+        font-size:14px;
+        padding:15px;
+    }
+
+}
+
+/* Small Mobile */
+
+@media screen and (max-width:480px){
+
+    .hero-content h1{
+        font-size:26px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .banner h1{
+        font-size:26px;
+    }
+
+    .title,
+    .title1{
+        font-size:18px;
+    }
+
+    .product-card img,
+    .card img{
+        height:150px;
+    }
+
+    .container h1{
+        font-size:24px;
+    }
+
+}
