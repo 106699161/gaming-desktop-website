@@ -1152,3 +1152,740 @@ button[type="reset"]{
 
 }
 
+/* Manager login botton */
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #00e5ff;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    box-shadow: 0 0 15px #00e5ff;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================
+                    MANAGER / REPORT STYLES
+========================================================== */
+
+.manager-auth-box {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #151515;
+    border-radius: 12px;
+}
+
+.manager-register-box {
+    max-width: 600px;
+}
+
+.manager-error {
+    color: #ff5555;
+    font-weight: bold;
+}
+
+.manager-success {
+    color: #4cff88;
+    font-weight: bold;
+}
+
+.manager-note {
+    margin-top: 20px;
+}
+
+.manager-panel {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #151515;
+    border-radius: 12px;
+}
+
+.reports-panel {
+    max-width: 1100px;
+}
+
+.manager-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.manager-search-form {
+    margin-bottom: 20px;
+}
+
+.manager-filter-form {
+    margin-bottom: 25px;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.report-form {
+    margin: 20px 0;
+}
+
+.report-summary {
+    padding: 25px;
+    background: #222;
+    border-radius: 10px;
+}
+
+
+/* PRODUCT PAGE ENHANCEMENTS */
+
+.product-comparison,
+.product-aside,
+.company-information,
+.business-hours {
+    width: 90%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+.product-comparison h2,
+.product-aside h2,
+.company-information h2,
+.business-hours h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.product-table,
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product-table th,
+.product-table td,
+.hours-table th,
+.hours-table td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+.product-table th,
+.hours-table th {
+    font-weight: bold;
+}
+
+.product-aside {
+    padding: 30px;
+    border-radius: 12px;
+    background: #151515;
+}
+
+.product-aside ul {
+    padding-left: 25px;
+}
+
+.product-aside li {
+    margin: 10px 0;
+}
+
+.company-information {
+    padding: 30px;
+    border-radius: 12px;
+    background: #151515;
+}
+
+.company-information dl {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 15px 25px;
+    margin: 0;
+}
+
+.company-information dt {
+    font-weight: bold;
+}
+
+.company-information dd {
+    margin: 0;
+}
+
+.business-hours {
+    padding: 30px;
+    border-radius: 12px;
+    background: #151515;
+}
+
+@media (max-width: 700px) {
+    .product-comparison,
+    .product-aside,
+    .company-information,
+    .business-hours {
+        width: 92%;
+    }
+
+    .product-table,
+    .hours-table {
+        font-size: 13px;
+    }
+
+    .product-table th,
+    .product-table td,
+    .hours-table th,
+    .hours-table td {
+        padding: 9px;
+    }
+
+    .company-information dl {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* RECEIPT PAGE */
+
+.receipt-container {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 20px;
+}
+
+.success-message {
+    padding: 22px;
+    margin-bottom: 25px;
+    border: 2px solid #00eaff;
+    border-radius: 12px;
+    background: #102626;
+    text-align: center;
+}
+
+.success-message h2 {
+    margin-top: 0;
+    color: #00eaff;
+}
+
+.receipt-section {
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: #171717;
+}
+
+.receipt-section h2 {
+    margin-top: 0;
+    color: #00eaff;
+}
+
+.receipt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.receipt-grid div {
+    padding: 15px;
+    border-radius: 8px;
+    background: #242424;
+}
+
+.receipt-grid strong,
+.receipt-grid span {
+    display: block;
+}
+
+.receipt-grid strong {
+    margin-bottom: 7px;
+    color: #aaa;
+}
+
+.receipt-grid span {
+    color: white;
+}
+
+.status {
+    font-weight: bold;
+    color: #00eaff !important;
+}
+
+.total {
+    font-weight: bold;
+    color: #00eaff !important;
+}
+
+.receipt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receipt-table th,
+.receipt-table td {
+    padding: 13px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.receipt-table th {
+    width: 35%;
+    color: #aaa;
+}
+
+.receipt-table td {
+    color: white;
+}
+
+.security-note {
+    margin-bottom: 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.comments {
+    line-height: 1.6;
+}
+
+.receipt-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.receipt-actions button,
+.receipt-actions a {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 7px;
+    background: #00eaff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.receipt-actions button:hover,
+.receipt-actions a:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+
+    .receipt-container {
+        margin: 25px 10px;
+        padding: 10px;
+    }
+
+    .receipt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .receipt-table th {
+        width: 40%;
+    }
+
+    .receipt-actions {
+        flex-direction: column;
+    }
+
+    .receipt-actions button,
+    .receipt-actions a {
+        text-align: center;
+    }
+}
+
+@media print {
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    header,
+    footer,
+    .banner,
+    .receipt-actions {
+        display: none !important;
+    }
+
+    .receipt-container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .receipt-section,
+    .success-message {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #999;
+    }
+
+    .receipt-section h2,
+    .success-message h2,
+    .receipt-table td,
+    .receipt-grid span {
+        color: black !important;
+    }
+}
+
+
+/* fix_order.php */
+
+.fix-order {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.fix-order fieldset {
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px solid #00eaff;
+    border-radius: 12px;
+    background: #171717;
+}
+
+.fix-order legend {
+    padding: 0 10px;
+    color: #00eaff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fix-order label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.fix-order input[type="text"],
+.fix-order input[type="password"],
+.fix-order select,
+.fix-order textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #444;
+    border-radius: 7px;
+    background: #242424;
+    color: white;
+    font-size: 15px;
+}
+
+.fix-order textarea {
+    resize: vertical;
+}
+
+.fix-order .invalid {
+    border: 2px solid #ff3333;
+}
+
+.error-message {
+    display: block;
+    margin-top: 5px;
+    color: #ff5555;
+    font-weight: bold;
+}
+
+.error-summary {
+    margin-bottom: 25px;
+    padding: 18px;
+    border-left: 5px solid #ff3333;
+    background: #2a1111;
+    color: white;
+}
+
+.error-summary li {
+    margin: 7px 0;
+}
+
+.radio-group,
+.check-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.radio-group label,
+.check-group label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.card-warning {
+    padding: 12px;
+    border-radius: 7px;
+    background: #332900;
+    color: #ffd84d;
+}
+
+.checkout-btn {
+    display: block;
+    margin: 25px auto 5px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 7px;
+    background: #00eaff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #00bcd4;
+}
+
+@media (max-width: 700px) {
+    .fix-order {
+        margin: 25px 15px;
+        padding: 15px;
+    }
+
+    .radio-group,
+    .check-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* ==========================================================
+                TEAM CONTACT & SCHEDULING TABLE
+========================================================== */
+
+.team-details{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.team-details h2{
+    color:#00eaff;
+    font-size:40px;
+    margin-bottom:35px;
+}
+
+.team-table-wrapper{
+    width:100%;
+    overflow-x:auto;
+}
+
+.team-info-table{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+    border-collapse:collapse;
+    background:#1b1b1b;
+    color:#ffffff;
+}
+
+.team-info-table th{
+    background:#111111;
+    color:#00eaff;
+    padding:18px;
+    border:1px solid #555;
+    text-align:left;
+    font-size:17px;
+}
+
+.team-info-table td{
+    padding:16px;
+    border:1px solid #555;
+    text-align:left;
+    line-height:1.6;
+}
+
+.team-info-table tr:hover{
+    background:#252525;
+}
+
+
+/* ==========================================================
+                PROJECT CONTRIBUTIONS
+========================================================== */
+
+.member p{
+    line-height:1.7;
+}
+
+.member .part1-contribution{
+    color:#00eaff;
+}
+
+.member .part2-contribution{
+    color:#ffffff;
+}
+
+.member .part1-contribution strong{
+    color:#00eaff;
+}
+
+.member .part2-contribution strong{
+    color:#8a2be2;
+}
+
+
+/* ==========================================================
+                    MOBILE TEAM TABLE
+========================================================== */
+
+@media(max-width:768px){
+
+    .team-details{
+        padding:50px 5%;
+    }
+
+    .team-details h2{
+        font-size:30px;
+    }
+
+    .team-info-table{
+        min-width:700px;
+    }
+
+    .team-info-table th,
+    .team-info-table td{
+        padding:12px;
+        font-size:14px;
+    }
+
+}
+
+/* ================= TEAM CARD ALIGNMENT ================= */
+
+.team-container .member {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make Part 1 section same height */
+.team-container .member .part1-contribution {
+    min-height: 250px;
+    margin-bottom: 0;
+}
+
+/* Make Part 2 section same height */
+.team-container .member .part2-contribution {
+    min-height: 165px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Part 2 heading */
+.team-container .member .part2-contribution strong {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Keep social icons at the bottom */
+.team-container .member .social {
+    margin-top: auto;
+}
+
+
+
+/* ================= COMPANY INFORMATION ================= */
+
+.company-information {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #171717;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.company-information h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+
+/* Information Cards */
+
+.company-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.company-info-card {
+    background: #202020;
+    padding: 25px 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: 0.3s ease;
+}
+
+.company-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.35);
+}
+
+.company-info-card i {
+    font-size: 30px;
+    color: #00eaff;
+    margin-bottom: 15px;
+}
+
+.company-info-card h3 {
+    color: #00eaff;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.company-info-card p {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* ================= COMPANY INFORMATION RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .company-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .company-information {
+        width: 85%;
+        padding: 25px 15px;
+    }
+
+    .company-information h2 {
+        font-size: 25px;
+    }
+
+    .company-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
